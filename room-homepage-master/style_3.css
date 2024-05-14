@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+img {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover {
+    color: white;
+    padding-bottom: 0.25rem;
+    border-bottom: solid 2px white;
+}
+
+ul a:active {
+    color: white;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    height: 100vh;
+    width: 1440px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_1 {
+    height: 70%;
+    background-color: lightsalmon;
+    display: flex;
+}
+
+.box_1 {
+    width: 60%;
+    background-image: url(./images/desktop-image-hero-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: lightgreen; */
+    /* position: relative; */
+}
+
+.hamburger {
+     /* background-color: pink; */
+    width: fit-content;
+  /* padding: 12px; */
+    /* margin: 0.5rem ; */
+    display: none;
+
+}
+
+.navbar {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar img {
+    width: 4rem;
+}
+
+.navlist {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.box_2 {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 5rem;
+    position: relative;
+}
+
+.header_1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    font-size: 1rem;
+    color: gray;
+}
+
+.button {
+    margin-top: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: gray;
+}
+
+.button:after {
+    color: black;
+}
+
+.button img {
+    width: 2.5rem;
+}
+
+
+.nav_left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_left img {
+    height: 2.5rem;
+    width: 1.25rem;
+}
+
+
+.nav_right{
+    position: absolute;
+    left: 5rem;
+    bottom: 0;
+    background-color: black;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_right img {
+    height: 2.5rem;
+    width: 1.25rem;
+}
+
+.nav_left:hover, .nav_right:hover{
+    background-color: gray;
+}
+
+.section_2 {
+    height: 30%;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.box_21 {
+    width: 30%;
+    background-image: url(./images/image-about-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: lightcoral; */
+}
+
+.box_22 {
+    width: 40%;
+    background-color: white;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 3rem;
+}
+
+.header_2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box_23 {
+    width: 30%;
+    background-image: url(./images/image-about-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: lightcoral; */
+}
+
+.menu {
+    display: grid;
+    height: 0;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: blue;
+    color:white;
+    position: absolute;
+    /* padding: 16px; */
+    gap: 8px;
+    top: 0.8rem;
+    left: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .menu-state {
+    display: none;
+  }
+  label {
+    position: relative;
+  }
+  
+  label .menu-state:checked + .menu {
+    /* display: grid; */
+    height: fit-content;
+    padding: 16px;
+  } 
+  
+
+@media (max-width: 375px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .container {
+        /* background-color: blue; */
+        /* height: 100vh; */
+        width: 375px;
+    }
+
+    .section_1 {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .box_1 {
+        width: 100%;
+        padding-top: 0.5rem;
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: inline;
+        padding-left: 1rem;
+    }
+
+    .navbar {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+
+    .navbar li {
+        display: none;
+        
+    }
+
+    .box_1 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .box_2 {
+        width: 100%;
+        height: 50%;
+        padding-inline: 1.5rem;
+    }
+
+    .header_1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.7rem;
+
+    }
+
+    .content {
+        font-size: 0.7rem;
+    }
+
+    .button {
+        margin-top: 0.7rem;
+        font-size: 0.7rem;
+    }
+    
+    .button img {
+        width: 1rem;
+    }
+
+    .nav_left{
+        left: calc(100% - 6rem);
+        bottom: 100%;
+        
+        height: 3rem;
+        width: 3rem;
+    }
+    
+    .nav_left img {
+        height: 1.5rem;
+        width: 0.75rem;
+    }
+
+    .nav_right{
+        left: calc(100% - 3rem);
+        bottom: 100%;
+        height: 3rem;
+        width: 3rem;
+    }
+    
+    .nav_right img {
+        height: 1.5rem;
+        width: 0.75rem;
+    }
+
+    .section_2 {
+        height: 50%;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_21 {
+        width: 100%;
+        height: 30%;
+    }
+    
+    .box_22 {
+        width: 100%;
+        height: 40%;
+        background-color: white;
+        padding-inline: 1.5rem;
+    }
+
+    .header_2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .box_23 {
+        width: 100%;
+        height: 30%;
+        background-image: url(./images/image-about-light.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-color: lightcoral; */
+    }
+
+
+
+
+    
+
+
+
+}
