@@ -42,14 +42,14 @@ body {
 .container {
     height: 100vh;
     width: 1440px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
 }
 
 .section_1 {
     height: 70%;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     display: flex;
 }
 
@@ -176,7 +176,7 @@ body {
 
 .section_2 {
     height: 30%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
 }
 
@@ -342,7 +342,7 @@ body {
 
     .section_2 {
         height: 50%;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         display: flex;
         flex-direction: column;
     }
